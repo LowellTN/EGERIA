@@ -5,7 +5,7 @@ a = Analysis(
     ['app/main.py'],
     pathex=['./app'],
     binaries=[],
-    datas=[],
+    datas=[('assets/images', 'assets/images')],
     hiddenimports=['windows.main_window', 'components.chat_message', 'workers.chat_worker', 'controllers.chat'],
     hookspath=[],
     hooksconfig={},

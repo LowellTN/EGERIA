@@ -30,5 +30,6 @@ pyinstaller --onefile \
             --hidden-import="components.chat_message" \
             --hidden-import="workers.chat_worker" \
             --hidden-import="controllers.chat" \
+            --add-data "assets/images:assets/images" \
             app/main.py
 ```

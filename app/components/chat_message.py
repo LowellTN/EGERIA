@@ -40,18 +40,18 @@ class ChatMessage(QWidget):
         self.message_frame.setLayout(frame_layout)
         
         if self.image_paths:
-            for img_name in self.image_paths:
+            for img_path in self.image_paths:
                 # Créer un QLabel pour l'image
                 image_label = QLabel()
                 image_label.setAlignment(Qt.AlignCenter)
                                 
                 # Charger l'image
-                pixmap = QPixmap(f"../assets/images/{img_name}")
+                pixmap = QPixmap(img_path)
 
                 # Gestion des erreurs d'affichage de l'image
                 if pixmap.isNull():
-                    print(f"Failed to load image: {img_name}")
-                    image_label.setText(f"❌ Image not found:Failed to load image: {img_name}")
+                    print(f"Failed to load image: {img_path}")
+                    image_label.setText(f"❌ Image not found:Failed to load image: {img_path}")
                     image_label.setStyleSheet("""
                         QLabel {
                             background-color: #ffeeee;

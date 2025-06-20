@@ -1,0 +1,17 @@
+Passez à agent plutot qu'a assistant = A garder en tête pour l'instant pas nécéssaire potentiellement.
+
+gérer les images pour le build : X
+
+créer un json pour les images en récupérant la sortie ls du fichiers assets/images
+
+name:
+    - path
+    - desc
+
+priorité speech to speech 
+sinon stt to tts
+
+ajouter gestion des musiques 
+et des images générés
+
+MININMUM pour le 26
